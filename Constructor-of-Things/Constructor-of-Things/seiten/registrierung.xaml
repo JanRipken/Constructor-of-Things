@@ -83,12 +83,18 @@
 
                         <StackPanel Orientation="Vertical" Margin="50,10,0,0">
                             <TextBlock Text="Nachname: " FontSize="25" FontWeight="Medium"/>
-                            <TextBox HorizontalAlignment="Left"  Width="150" FontSize="25" Background="#FFF39797"/>
+                            <TextBox HorizontalAlignment="Left"  Width="150" FontSize="25" Background="#FFF38888"/>
                         </StackPanel>
 
                         <StackPanel Orientation="Vertical" Margin="50,10,0,0">
                             <TextBlock Text="Geschlecht:  " FontSize="25" FontWeight="Medium"/>
-                            <ComboBox   Width="150" Height="33" FontSize="20" HorizontalAlignment="Left" x:Name="CB_Geschlecht" SelectionChanged="CB_Geschlecht_SelectionChanged">
+                            <ComboBox ItemContainerStyle="{DynamicResource ComboBoxItemContainerStyle1}" 
+                                      Template="{DynamicResource ComboBoxTemplate1}" 
+                                      Width="150" Height="33" 
+                                      FontSize="20" 
+                                      HorizontalAlignment="Left" 
+                                      x:Name="CB_Geschlecht" 
+                                      SelectionChanged="CB_Geschlecht_SelectionChanged">
                                 <ComboBoxItem  Width="150">
                                     <StackPanel Orientation="Horizontal" >
                                         <TextBlock Text="Männlich" FontSize="20"/>
@@ -99,12 +105,33 @@
                                         <TextBlock Text="Weiblich" FontSize="20"/>
                                     </StackPanel>
                                 </ComboBoxItem>
+                                <ComboBoxItem Width="150" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Divers" FontSize="20"/>
+                                    </StackPanel>
+                                </ComboBoxItem>
                             </ComboBox>
                         </StackPanel>
 
                         <StackPanel Orientation="Vertical" Margin="50,10,0,0">
                             <TextBlock Text="Geburtsdatum:   " FontSize="25" FontWeight="Medium"/>
-                            <DatePicker FontSize="20" Width="200" HorizontalAlignment="Left" x:Name="DP_Gebrtstag" SelectedDateChanged="DP_Gebrtstag_SelectedDateChanged"/>
+                            <DatePicker  Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        Margin="-2,0,0,0"
+                                        FontSize="20"
+                                        Width="200"
+                                        HorizontalAlignment="Left"
+                                        x:Name="DP_Gebrtstag" 
+                                        SelectedDateChanged="DP_Gebrtstag_SelectedDateChanged">
+                                <DatePicker.Resources>
+                                    <Style TargetType="{x:Type DatePickerTextBox}" >
+                                        <Setter Property="Background" Value="#FFF38888" />
+                                        <Setter Property="BorderBrush" Value="Transparent" />
+                                      
+                                    </Style>
+                                </DatePicker.Resources>
+
+                            </DatePicker>
                         </StackPanel>
 
                         <StackPanel Orientation="Vertical" Margin="50,10,0,0">
@@ -114,7 +141,12 @@
 
                         <StackPanel Orientation="Vertical" Margin="50,5,0,0">
                             <TextBlock Text="Hochschule:  " FontSize="25" FontWeight="Medium"/>
-                            <ComboBox Width="150" Height="33" HorizontalAlignment="Left" x:Name="CB_Hochschule" SelectionChanged="CB_Hochschule_SelectionChanged">
+                            <ComboBox ItemContainerStyle="{DynamicResource ComboBoxItemContainerStyle1}" 
+                                      Template="{DynamicResource ComboBoxTemplate1}"
+                                      Width="150" Height="33" 
+                                      HorizontalAlignment="Left"
+                                      x:Name="CB_Hochschule"
+                                      SelectionChanged="CB_Hochschule_SelectionChanged">
                                 <ComboBoxItem Width="150">
                                     <StackPanel Orientation="Horizontal" >
                                         <TextBlock Text="Wilhelmshaven" FontSize="20"/>
@@ -148,7 +180,7 @@
 
                         <StackPanel Orientation="Vertical" Margin="50,5,0,0">
                             <TextBlock Text="E-Mail:  " FontSize="25" FontWeight="Medium"/>
-                            <TextBox  Width="150" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
+                            <TextBox  Width="300" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
                         </StackPanel>
 
                         <StackPanel  Orientation="Vertical" Margin="50,10,0,0">

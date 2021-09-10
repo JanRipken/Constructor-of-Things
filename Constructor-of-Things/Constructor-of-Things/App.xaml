@@ -8,6 +8,8 @@
         <ResourceDictionary >
             <ResourceDictionary.MergedDictionaries >
                 <ResourceDictionary  Source="resdic/login_buttons.xaml"/>
+                <ResourceDictionary  Source="resdic/combobox_regis.xaml"/>
+                <ResourceDictionary  Source="resdic/comboboxitem_regis.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
