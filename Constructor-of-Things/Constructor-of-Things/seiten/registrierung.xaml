@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Constructor_of_Things.seiten"
         mc:Ignorable="d"
-       Title="CoT-Registrierung"   WindowStartupLocation="CenterScreen" WindowState="Normal"
+       Title="CoT-Registrierung" Icon="/bilder/CoT-icon.png" WindowStartupLocation="CenterScreen" WindowState="Normal"
         WindowStyle="None" ResizeMode="NoResize"
         MouseDown="Window_MouseDown" Height="1000" Width="800" AllowsTransparency="True" Background="Transparent" >
     <Grid>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Constructor_of_Things.seiten"
         mc:Ignorable="d"
-        Title="main_page" Height="450" Width="800">
+        Title="main_page" Icon="/bilder/CoT-icon.png" Height="450" Width="800">
     <Grid>
         
     </Grid>
