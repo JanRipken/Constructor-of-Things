@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Constructor_of_Things
+namespace Constructor_of_Things.seiten
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaktionslogik für main_page.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class main_page : Window
     {
-        public MainWindow()
+        public main_page()
         {
             InitializeComponent();
         }
