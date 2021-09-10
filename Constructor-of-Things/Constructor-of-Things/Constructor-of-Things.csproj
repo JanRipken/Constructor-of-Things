@@ -10,15 +10,11 @@
   <ItemGroup>
     <None Remove="bilder\CoT-icon.png" />
     <None Remove="bilder\CoT-logo.png" />
-    <None Remove="seiten\CoT-icon.png" />
-    <None Remove="seiten\CoT-logo.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="bilder\CoT-icon.png" />
     <Resource Include="bilder\CoT-logo.png" />
-    <Resource Include="seiten\CoT-icon.png" />
-    <Resource Include="seiten\CoT-logo.png" />
   </ItemGroup>
 
 </Project>
