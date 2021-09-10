@@ -5,9 +5,128 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Constructor_of_Things"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
+        Title="CoT-Login"  Height="450" Width="380"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown">
     <Grid>
-       
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Border CornerRadius="10" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#FF231E1E" Offset="1"/>
+                        <GradientStop Color="#FF231E1E" Offset="0.01"/>
+                        <GradientStop Color="#FFF12828" Offset="0.2"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+
+            <StackPanel VerticalAlignment="Center">
+               
+            </StackPanel>
+
+
+
+            <StackPanel Grid.Row="1" >
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Label Margin="63,0,0,0"
+                               Foreground="LightGray"
+                               Padding="6" Height="30"
+                               Width="235" 
+                               HorizontalAlignment="Center"  
+                               FontSize="15"
+                               x:Name="lbl_username"
+                               >Username</Label>
+
+                        <TextBox FontFamily="Helvetica"
+                             FontWeight="Normal"                            
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Width="235"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25"
+                             Margin="63,0,0,0"
+                             x:Name="txtb_Username"
+                             TextChanged="txtb_Username_TextChanged"
+                                
+                                 />
+
+                    </Grid>
+
+
+                </StackPanel>
+                <Border Width="250"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+
+
+
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Grid>
+                        <Label Margin="63,0,0,0"
+                               Foreground="LightGray"
+                               Padding="6" Height="30"
+                               Width="235" 
+                               HorizontalAlignment="Center"  
+                               FontSize="15"
+                               x:Name="lbl_Passwort"
+                               >Passwort</Label>
+
+                        <PasswordBox FontFamily="Helvetica"
+                             FontWeight="Normal"                          
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Width="235"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25"
+                             Margin="63,0,0,0"
+                             x:Name="txtb_Password"
+                             PasswordChanged="txtb_Password_PasswordChanged"                                    
+                                />
+                    </Grid>
+
+
+                </StackPanel>
+                <Border Width="250"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5"/>
+
+
+                <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                    <Button Style="{StaticResource LoginButton}" Width="100" Height="40" Content="EINLOGGEN" Margin="20,0,20,0" x:Name="LOGIN" Click="LOGIN_Click"  />
+                    <Button Style="{StaticResource LoginButton}" Width="100" Height="40" Content="REGISTRIEREN" x:Name="REGISTRIEREN" Click="REGISTRIEREN_Click"/>
+                    <Button Style="{StaticResource LoginButton}" Width="100" Height="40" Content="SCHLISSEN" Margin="20,0,0,0" x:Name="SCHLISSEN" Click="SCHLISSEN_Click"/>
+                </StackPanel>
+
+
+
+            </StackPanel>
+
+
+
+
+
+
+        </Grid>
+
 
     </Grid>
 </Window>

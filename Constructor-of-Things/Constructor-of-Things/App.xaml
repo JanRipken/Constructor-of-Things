@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:Constructor_of_Things"
              StartupUri="seiten/Login.xaml">
     <Application.Resources>
-         
+
+        <ResourceDictionary >
+            <ResourceDictionary.MergedDictionaries >
+                <ResourceDictionary  Source="resdic/login_buttons.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

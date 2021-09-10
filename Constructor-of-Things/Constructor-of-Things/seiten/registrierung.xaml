@@ -5,8 +5,203 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Constructor_of_Things.seiten"
         mc:Ignorable="d"
-        Title="registrierung" Height="450" Width="800">
+       Title="CoT-Registrierung"   WindowStartupLocation="CenterScreen" WindowState="Normal"
+        WindowStyle="None" ResizeMode="NoResize"
+        MouseDown="Window_MouseDown" Height="1000" Width="800" AllowsTransparency="True" Background="Transparent" >
     <Grid>
-        
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <Border CornerRadius="10" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FF231E1E" Offset="1"/>
+                    <GradientStop Color="#FF231E1E" Offset="0.01"/>
+                    <GradientStop Color="#FFF12828" Offset="0.2"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+
+        <Grid Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+
+
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="1"
+                        Grid.Column="1" Grid.ColumnSpan="2" >
+                <Image  Width="600"/>
+                <TextBlock Text="Registrierung" HorizontalAlignment="Center" FontSize="40" Margin="0,10,0,0"
+                           FontWeight="Bold"/>
+            </StackPanel>
+
+
+
+
+            <Border Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="0,200,0,0"
+                    BorderThickness="1" BorderBrush="White" CornerRadius="10">
+
+                <Grid >
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="0"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="0"/>
+                    </Grid.RowDefinitions>
+
+
+
+
+                    <StackPanel Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
+                        <StackPanel Orientation="Vertical" Margin="50,5,0,0">
+                            <TextBlock Text="Name:  " FontSize="25" FontWeight="Medium"/>
+                            <TextBox HorizontalAlignment="Left"  Width="150" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,10,0,0">
+                            <TextBlock Text="Nachname: " FontSize="25" FontWeight="Medium"/>
+                            <TextBox HorizontalAlignment="Left"  Width="150" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,10,0,0">
+                            <TextBlock Text="Geschlecht:  " FontSize="25" FontWeight="Medium"/>
+                            <ComboBox   Width="150" Height="33" FontSize="20" HorizontalAlignment="Left" x:Name="CB_Geschlecht" SelectionChanged="CB_Geschlecht_SelectionChanged">
+                                <ComboBoxItem  Width="150">
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock Text="Männlich" FontSize="20"/>
+                                    </StackPanel>
+                                </ComboBoxItem>
+                                <ComboBoxItem Width="150" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Weiblich" FontSize="20"/>
+                                    </StackPanel>
+                                </ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,10,0,0">
+                            <TextBlock Text="Geburtsdatum:   " FontSize="25" FontWeight="Medium"/>
+                            <DatePicker FontSize="20" Width="200" HorizontalAlignment="Left" x:Name="DP_Gebrtstag" SelectedDateChanged="DP_Gebrtstag_SelectedDateChanged"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,10,0,0">
+                            <TextBlock Text="Matrikelnummer:   " FontSize="25" FontWeight="Medium"/>
+                            <TextBox Width="150" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,5,0,0">
+                            <TextBlock Text="Hochschule:  " FontSize="25" FontWeight="Medium"/>
+                            <ComboBox Width="150" Height="33" HorizontalAlignment="Left" x:Name="CB_Hochschule" SelectionChanged="CB_Hochschule_SelectionChanged">
+                                <ComboBoxItem Width="150">
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock Text="Wilhelmshaven" FontSize="20"/>
+                                    </StackPanel>
+                                </ComboBoxItem>
+                                <ComboBoxItem Width="150" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Oldenburg" FontSize="20"/>
+                                    </StackPanel>
+                                </ComboBoxItem>
+                                <ComboBoxItem Width="150" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Elsfleth" FontSize="20"/>
+                                    </StackPanel>
+                                </ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,5,0,0">
+                            <TextBlock Text="Studiengang:  " FontSize="25" FontWeight="Medium"/>
+                            <TextBox Width="150" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+
+
+
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="2" Grid.RowSpan="2" >
+
+                        <StackPanel Orientation="Vertical" Margin="50,5,0,0">
+                            <TextBlock Text="E-Mail:  " FontSize="25" FontWeight="Medium"/>
+                            <TextBox  Width="150" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+                        <StackPanel  Orientation="Vertical" Margin="50,10,0,0">
+                            <TextBlock Text="Land:  " FontSize="25" FontWeight="Medium"/>
+                            <TextBox Width="150" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,10,0,0">
+                            <TextBlock Text="Ort:  " FontSize="25" FontWeight="Medium"/>
+                            <TextBox Width="150" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,10,0,0">
+                            <TextBlock Text="Tel. :  " FontSize="25" FontWeight="Medium"/>
+                            <TextBox Width="150" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,50,0,0">
+                            <TextBlock Text="Username: " FontSize="25" FontWeight="Medium"/>
+                            <TextBox  Width="150" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,10,0,0">
+                            <TextBlock Text="Passwort: " FontSize="25" FontWeight="Medium"/>
+                            <TextBox  Width="150" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="50,10,0,0">
+                            <TextBlock Text="Passwort Wdh. : " FontSize="25" FontWeight="Medium"/>
+                            <TextBox  Width="150" HorizontalAlignment="Left" FontSize="25" Background="#FFF39797"/>
+                        </StackPanel>
+
+                    </StackPanel>
+
+
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0,0,0,20" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+                        <Button Style="{StaticResource LoginButton}"  Width="120" Height="60" FontSize="15" Content="Registrieren" Margin="240,0,40,0" x:Name="btn_registrieren" Click="btn_registrieren_Click" />
+                        <Button Style="{StaticResource LoginButton}" Width="120" Height="60" FontSize="15" Content="Schlissen" x:Name="SCHLISSEN" Click="SCHLISSEN_Click"/>
+
+                    </StackPanel>
+
+                </Grid>
+
+
+
+
+            </Border>
+
+
+
+
+        </Grid>
+
+
     </Grid>
 </Window>
