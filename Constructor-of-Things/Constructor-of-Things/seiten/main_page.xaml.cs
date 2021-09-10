@@ -36,7 +36,7 @@ namespace Constructor_of_Things.seiten
 
         private void btn_WindowChange_Click(object sender, RoutedEventArgs e)
         {
-            if (this.top_leiste.IsMouseDirectlyOver)
+            if (this.top_leiste.IsMouseDirectlyOver) // why does this not work findig out soon
             {
                 if (this.WindowState == WindowState.Maximized)
                 {

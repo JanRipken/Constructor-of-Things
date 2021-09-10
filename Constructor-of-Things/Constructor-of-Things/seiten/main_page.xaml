@@ -58,18 +58,7 @@
                   Grid.ColumnSpan="2"
                   x:Name="top_leiste">
 
-                <Grid.Style>
-                    <Style TargetType="{x:Type Grid}">
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="False">
-                                <Setter Property="Opacity" Value="1"></Setter>
-                            </Trigger>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Opacity" Value="1"></Setter>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Grid.Style>
+              
 
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right"
