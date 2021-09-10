@@ -1,0 +1,17 @@
+﻿CREATE TABLE [dbo].[Table_regis] (
+    [NAME]           VARCHAR (50) NULL,
+    [NACHNAME]       VARCHAR (50) NULL,
+    [GESCHLECHT]     CHAR (1)     NULL,
+    [GEBURTSDATUM]   VARCHAR (50) NULL,
+    [MATRIKELNUMMER] INT          NOT NULL,
+    [HOCHSCHULE]     VARCHAR (50) NULL,
+    [STUDIENGANG]    VARCHAR (50) NULL,
+    [EMAIL]          VARCHAR (50) NULL,
+    [LAND]           VARCHAR (50) NULL,
+    [ORT]            VARCHAR (50) NULL,
+    [TEL]            VARCHAR (50) NULL,
+    [USERNAME]       VARCHAR (50) NOT NULL,
+    [PASSWORD]       VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([MATRIKELNUMMER] ASC)
+);
+
