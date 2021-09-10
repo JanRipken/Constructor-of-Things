@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks" 
         xmlns:local="clr-namespace:Constructor_of_Things"
         mc:Ignorable="d"
         Title="CoT-Login" Icon="/bilder/CoT-icon.png"  Height="450" Width="380"
@@ -66,6 +67,10 @@
 
                     </Grid>
 
+                    <iconPacks:PackIconMaterial Kind="Account" 
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="White"/>
 
                 </StackPanel>
                 <Border Width="250"
@@ -103,6 +108,11 @@
                                 />
                     </Grid>
 
+
+                    <iconPacks:PackIconMaterial Kind="FormTextboxPassword" 
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="White"/>
 
                 </StackPanel>
                 <Border Width="250"

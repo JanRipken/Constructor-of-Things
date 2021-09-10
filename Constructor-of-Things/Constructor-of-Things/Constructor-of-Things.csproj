@@ -13,6 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.7" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="bilder\CoT-icon.png" />
     <Resource Include="bilder\CoT-logo.png" />
   </ItemGroup>
