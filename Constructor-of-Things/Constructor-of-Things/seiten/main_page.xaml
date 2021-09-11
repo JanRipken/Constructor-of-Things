@@ -58,7 +58,23 @@
                   Grid.ColumnSpan="2"
                   x:Name="top_leiste">
 
-              
+                <Button Style="{StaticResource SettingsButton}"
+                        HorizontalAlignment="Left"
+                        Margin="20,5,0,5"
+                        Width="100">
+                    <StackPanel Orientation="Horizontal">
+                        <iconPacks:PackIconMaterial Kind="TuneVariant" 
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="Black"/>
+
+                        <TextBlock  Margin="5,0,0,0"
+                                    Text="Settings"
+                                    FontSize="15"
+                                    />
+
+                    </StackPanel>
+                </Button>
 
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right"

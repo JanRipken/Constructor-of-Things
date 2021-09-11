@@ -4,8 +4,8 @@
 
    
     <LinearGradientBrush x:Key="ComboBox.Static.Background" EndPoint="0,1" StartPoint="0,0">
-        <GradientStop Color="#FFF39797" Offset="0.0"/>
-        <GradientStop Color="#FFF39797" Offset="1.0"/>
+        <GradientStop Color="DarkGray" Offset="0.0"/>
+        <GradientStop Color="DarkGray" Offset="1.0"/>
     </LinearGradientBrush>
     <SolidColorBrush x:Key="ComboBox.Static.Border" Color="#FFACACAC"/>
     <SolidColorBrush x:Key="ComboBox.Static.Glyph" Color="#FF606060"/>
@@ -14,8 +14,8 @@
     <SolidColorBrush x:Key="ComboBox.Static.Editable.Button.Background" Color="Transparent"/>
     <SolidColorBrush x:Key="ComboBox.Static.Editable.Button.Border" Color="Transparent"/>
     <LinearGradientBrush x:Key="ComboBox.MouseOver.Background" EndPoint="0,1" StartPoint="0,0">
-        <GradientStop Color="#FFF39797" Offset="0.0"/>
-        <GradientStop Color="#FFF39797" Offset="1.0"/>
+        <GradientStop Color="DarkGray" Offset="0.0"/>
+        <GradientStop Color="DarkGray" Offset="1.0"/>
     </LinearGradientBrush>
     <SolidColorBrush x:Key="ComboBox.MouseOver.Border" Color="#FF7EB4EA"/>
     <SolidColorBrush x:Key="ComboBox.MouseOver.Glyph" Color="#FF000000"/>
