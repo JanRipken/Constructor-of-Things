@@ -37,6 +37,19 @@
             </Grid.RowDefinitions>
 
 
+            <Grid Grid.Column="1"
+                  Grid.Row="1"
+                  >
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TabControl >
+                    <TabItem Header="tab1"/>
+                    <TabItem Header="tab2"/>
+                </TabControl>
+            </Grid>
+            
             <Border
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
