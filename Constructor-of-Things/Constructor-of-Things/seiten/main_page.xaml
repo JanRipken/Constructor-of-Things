@@ -127,28 +127,50 @@
                 <StackPanel Orientation="Vertical">
                     <Image Source="/bilder/CoT-logo.png"
                            Height="160"/>
-                    <Grid>
+                    
+                    <Grid Height="50" 
+                          VerticalAlignment="Top"
+                          Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
 
-                        <TextBox Height="50"
-                             Width="240"
-                             FontSize="20"
-                             TextAlignment="Left"
-                             Padding="15,10,0,0">
-                            
-                            <TextBox.Resources>
-                                <Style TargetType="{x:Type Border}">
-                                    <Setter Property="CornerRadius" Value="20"/>
-                                </Style>
-                            </TextBox.Resources>
+                        <Border CornerRadius="10"
+                                Height="50"
+                                Background="White">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="50"/>
+                                </Grid.ColumnDefinitions>
 
-                        </TextBox>
+                                <TextBox Padding="0,5,0,0"
+                                         Margin="5"
+                                         Background="Transparent"
+                                         BorderBrush="Transparent"
+                                         FontSize="20"/>
+                                <Button Style="{StaticResource SettingsButton}"
+                                    Grid.Column="1">
+                                    <iconPacks:PackIconMaterial 
+                                                            Kind="TextSearch" 
+                                                            VerticalAlignment="Center" 
+                                                            HorizontalAlignment="Center" 
+                                                            Foreground="Black"
+                                                            Height="25"
+                                                            Width="25"/>    
+                                </Button>
+                                
+                                
+                            </Grid>
+                        </Border>
+
                     </Grid>
 
                     <Border Margin="5,20,5,0"
                             Background="Black"
                             Opacity="0.4"
                             CornerRadius="20">
-                        <TreeView Name="trv_Profilauswahl"
+                        <TreeView ItemContainerStyle="{DynamicResource TreeViewItemContainerStyle1}" Style="{DynamicResource TreeViewStyle1}" Name="trv_Profilauswahl"
                                   Margin="5,5,0,5"
                                   FontSize="20"
                                   Width="230"

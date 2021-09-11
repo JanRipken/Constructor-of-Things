@@ -12,6 +12,8 @@
                 <ResourceDictionary  Source="resdic/comboboxitem_regis.xaml"/>
                 <ResourceDictionary  Source="resdic/mainpage_topbuttons.xaml"/>
                 <ResourceDictionary  Source="resdic/main_page_SettingsButton.xaml"/>
+                <ResourceDictionary  Source="resdic/main_pageTreeView.xaml"/>
+                <ResourceDictionary  Source="resdic/main_pageTreeViewContainer.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
