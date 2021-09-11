@@ -44,9 +44,8 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-                <TabControl >
+                <TabControl x:Name="TabControl">
                     <TabItem Header="tab1"/>
-                    <TabItem Header="tab2"/>
                 </TabControl>
             </Grid>
             
@@ -74,7 +73,9 @@
                 <Button Style="{StaticResource SettingsButton}"
                         HorizontalAlignment="Left"
                         Margin="20,5,0,5"
-                        Width="100">
+                        Width="100"
+                        x:Name="btn_settings"
+                        Click="btn_settings_Click">
                     <StackPanel Orientation="Horizontal">
                         <iconPacks:PackIconMaterial Kind="TuneVariant" 
                                                 VerticalAlignment="Center" 

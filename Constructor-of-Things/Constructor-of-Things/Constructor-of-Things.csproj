@@ -22,9 +22,4 @@
     <Resource Include="bilder\CoT-logo.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="classes\" />
-    <Folder Include="user-controls\" />
-  </ItemGroup>
-
 </Project>

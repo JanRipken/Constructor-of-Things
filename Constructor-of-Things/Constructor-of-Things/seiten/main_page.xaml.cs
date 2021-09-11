@@ -69,5 +69,14 @@ namespace Constructor_of_Things.seiten
                 }
             }
         }
+
+        private void btn_settings_Click(object sender, RoutedEventArgs e)
+        {
+
+            // neuer tab mit settings user control
+            classes.CloasableTabs closableTabs = new classes.CloasableTabs();
+            closableTabs.newTab();
+
+        }
     }
 }
