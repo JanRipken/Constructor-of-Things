@@ -113,8 +113,6 @@
                            Height="160"/>
                     <Grid>
 
-
-
                         <TextBox Height="50"
                              Width="240"
                              FontSize="20"
@@ -129,6 +127,47 @@
 
                         </TextBox>
                     </Grid>
+
+                    <Border Margin="5,20,5,0"
+                            Background="Black"
+                            Opacity="0.4"
+                            CornerRadius="20">
+                        <TreeView Name="trv_Profilauswahl"
+                                  Margin="5,5,0,5"
+                                  FontSize="20"
+                                  Width="230"
+                                  Background="Transparent"
+                                  BorderBrush="Transparent"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                                  HorizontalAlignment="Left"
+                                  >
+
+                            <TreeViewItem Header="Vollprofile" IsExpanded="True" Foreground="White" >
+                                <TreeViewItem x:Name="tvi_Rechteckprofil" Header="Rechteckprofil" Foreground="White"  />
+                                <TreeViewItem x:Name="tvi_Rundprofil" Header="Rundprofil" Foreground="White"  />
+                            </TreeViewItem>
+                            <TreeViewItem Header="Rohrprofile" IsExpanded="True" Foreground="White">
+                                <TreeViewItem x:Name="tvi_Rohrprofil" Header="Rohrprofil" Foreground="White" />
+                                <TreeViewItem x:Name="tvi_Rechteckrohr" Header="Rechteckrohr" Foreground="White"  />
+                            </TreeViewItem>
+                            <TreeViewItem Header="Sonstige" IsExpanded="True" Foreground="White">
+                                <TreeViewItem x:Name="tvi_Winkelprofil" Header="Winkelprofil" Foreground="White"/>
+                                <TreeViewItem x:Name="tvi_TProfil" Header="T-Profil" Foreground="White" />
+                                <TreeViewItem x:Name="tvi_DoppelTProfil" Header="Doppel T-Profil" Foreground="White" />
+                            </TreeViewItem>
+                            <TreeViewItem Header="Getriebe Elemente" IsExpanded="True" Foreground="White">
+                                <TreeViewItem x:Name="tvi_Zahnrad2" Header="Zahnrad" Foreground="White" />
+                            </TreeViewItem>
+                            <TreeViewItem Header="Schrauben" IsExpanded="True" Foreground="White">
+                                <TreeViewItem x:Name="tvi_Sechskantschraube" Header="Sechskantschraube" Foreground="White"  />
+                            </TreeViewItem>
+                            <TreeViewItem Header="Schraubenmuttern" IsExpanded="True" Foreground="White">
+                                <TreeViewItem x:Name="tvi_Schraubenmuttern" Header="Sechskantmutter"  Foreground="White" />
+                            </TreeViewItem>
+
+                        </TreeView>
+
+                    </Border>
                 </StackPanel>
             </Grid>
         </Grid>

@@ -36,17 +36,16 @@ namespace Constructor_of_Things.seiten
 
         private void btn_WindowChange_Click(object sender, RoutedEventArgs e)
         {
-            if (this.top_leiste.IsMouseDirectlyOver) // why does this not work findig out soon
+            if (this.WindowState == WindowState.Maximized)
             {
-                if (this.WindowState == WindowState.Maximized)
-                {
-                    WindowState = WindowState.Normal;
-                }
-                else
-                {
-                    WindowState = WindowState.Maximized;
-                }
+                WindowState = WindowState.Normal;
             }
+            else
+            {
+                WindowState = WindowState.Maximized;
+            }
+
+     
         }
 
         private void btn_WindowMini_Click(object sender, RoutedEventArgs e)
@@ -56,13 +55,16 @@ namespace Constructor_of_Things.seiten
 
         private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (this.WindowState == WindowState.Maximized)
+            if (Mouse.DirectlyOver == this.top_leiste) // why does this not work findig out soon
             {
-                WindowState = WindowState.Normal;
-            }
-            else
-            {
-                WindowState = WindowState.Maximized;
+                if (this.WindowState == WindowState.Maximized)
+                {
+                    WindowState = WindowState.Normal;
+                }
+                else
+                {
+                    WindowState = WindowState.Maximized;
+                }
             }
         }
     }
