@@ -27,6 +27,8 @@ namespace Constructor_of_Things.seiten
         {
             if (e.LeftButton == MouseButtonState.Pressed)
                 DragMove();
+
+       
         }
 
         private void btn_close_Click(object sender, RoutedEventArgs e)
