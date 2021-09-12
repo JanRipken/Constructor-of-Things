@@ -9,10 +9,10 @@ namespace Constructor_of_Things.classes
 {
     public class CloasableTabs : TabItem
     {
-
+        
        public void newTab()
         {
-
+                
         }
 
     }
