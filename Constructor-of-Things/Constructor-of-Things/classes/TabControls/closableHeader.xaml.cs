@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Constructor_of_Things.user_controls
+namespace Constructor_of_Things.classes.TabControls
 {
     /// <summary>
-    /// Interaktionslogik für settings.xaml
+    /// Interaktionslogik für closableHeader.xaml
     /// </summary>
-    public partial class settings : UserControl
+    public partial class closableHeader : UserControl
     {
-        public settings()
+        public closableHeader()
         {
             InitializeComponent();
         }

@@ -44,9 +44,8 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-                <TabControl x:Name="myTabControl">
-                    <TabItem Header="tab1"/>
-                </TabControl>
+                <TabControl x:Name="myTabControl"></TabControl>
+                
             </Grid>
             
             <Border

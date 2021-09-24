@@ -74,8 +74,7 @@ namespace Constructor_of_Things.seiten
         {
 
             // neuer tab mit settings user control
-            classes.CloasableTabs closableTabs = new classes.CloasableTabs();
-            closableTabs.newTab();
+            
 
         }
     }
